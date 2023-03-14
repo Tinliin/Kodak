@@ -1,3 +1,81 @@
+header {
+  height: 58px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+}
+
+.header_container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #e30613;
+  font-weight: 700;
+  text-decoration: none;
+}
+.logo:hover {
+  color: rgba(210, 207, 202, 0.6);
+}
+
+nav {
+  width: 50%;
+  height: 70%;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav_item:hover {
+  background-color: rgba(210, 207, 202, 0.2);
+  height: 100%;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.first_section {
+  display: flex;
+}
+
+.bigest_text {
+  width: 50vw;
+  margin-left: 10vw;
+  margin-top: 10vw;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
 @charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -308,19 +386,6 @@ template {
   display: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.background {
-  margin: 0;
-  background-image: url(../img/Фон\ 1.png);
-  background-size: cover;
-  height: 100vh;
-}
-
 header {
   height: 58px;
   display: flex;
@@ -385,4 +450,31 @@ nav {
   font-weight: 500;
   font-family: sans-serif;
   text-transform: uppercase;
+}
+
+.first_section {
+  display: flex;
+}
+
+.bigest_text {
+  width: 50vw;
+  margin-left: 10vw;
+  margin-top: 10vw;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background {
+  margin: 0;
+  background-image: url(../img/Фон\ 1.png);
+  background-size: cover;
+  height: 100vh;
 }
