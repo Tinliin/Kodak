@@ -9,10 +9,13 @@
 }
 
 .background {
+  position: relative;
+  top: -60px;
   margin: 0;
   background-image: url(../img/Фон\ 1.png);
   background-size: cover;
   height: 100vh;
+  z-index: -1;
 }
 
 .section_container {
