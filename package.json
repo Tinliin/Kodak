@@ -23,7 +23,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.54.4"
+    "sass": "^1.59.3"
   },
   "bugs": {
     "url": "https://github.com/Tinliin/Kodak/issues"
