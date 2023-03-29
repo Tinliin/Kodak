@@ -18,40 +18,47 @@ header {
 
 .logo {
   display: flex;
-  flex-wrap: wrap;
   margin-top: auto;
   margin-bottom: auto;
-  width: 200px;
-  font-family: sans-serif;
+  width: 220px;
   text-decoration: none;
 }
 
+.logo_img {
+  display: flex;
+}
 .logo_img::after {
   content: "";
+  position: relative;
+  top: 6px;
+  border: 1px solid #000000;
   background-color: #000000;
-  width: 3px;
+  width: 2px;
   height: 45px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 5px;
+}
+
+.logo_textconteiner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .big_logo_name {
-  font-family: "Abhaya Libre", serif;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 800;
   color: #83000e;
   margin: 0;
+  height: 30px;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .small_logo_name {
-  position: relative;
-  top: -10px;
-  font-family: "Abhaya Libre", serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
   color: #83000e;
+  text-shadow: 1px 1px 2px #000000;
   margin: 0;
 }
 
@@ -104,8 +111,15 @@ nav {
   color: lightsalmon;
   font-size: 50px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   mix-blend-mode: color-dodge;
+}
+
+.section_header {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .main_massage {
@@ -450,40 +464,47 @@ header {
 
 .logo {
   display: flex;
-  flex-wrap: wrap;
   margin-top: auto;
   margin-bottom: auto;
-  width: 200px;
-  font-family: sans-serif;
+  width: 220px;
   text-decoration: none;
 }
 
+.logo_img {
+  display: flex;
+}
 .logo_img::after {
   content: "";
+  position: relative;
+  top: 6px;
+  border: 1px solid #000000;
   background-color: #000000;
-  width: 3px;
+  width: 2px;
   height: 45px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 5px;
+}
+
+.logo_textconteiner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .big_logo_name {
-  font-family: "Abhaya Libre", serif;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 800;
   color: #83000e;
   margin: 0;
+  height: 30px;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .small_logo_name {
-  position: relative;
-  top: -10px;
-  font-family: "Abhaya Libre", serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
   color: #83000e;
+  text-shadow: 1px 1px 2px #000000;
   margin: 0;
 }
 
@@ -536,8 +557,15 @@ nav {
   color: lightsalmon;
   font-size: 50px;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
   mix-blend-mode: color-dodge;
+}
+
+.section_header {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .main_massage {
@@ -554,6 +582,9 @@ nav {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

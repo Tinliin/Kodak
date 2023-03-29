@@ -3,9 +3,13 @@
 @import "main";
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .background {
