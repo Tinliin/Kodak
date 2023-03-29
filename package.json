@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/Tinliin/Kodak/issues"
   },
-  "homepage": "https://github.com/Tinliin/Kodak#readme"
+  "homepage": "https://github.com/Tinliin/Kodak#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
