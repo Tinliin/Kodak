@@ -1,16 +1,35 @@
 header {
-  height: 95px;
-  display: flex;
-  background: rgba(94, 94, 94, 0.56);
-  position: sticky;
+  @include flex_column;
+  height: 180px;
   top: 0;
+  margin: 0;
+  background-color: #222323;
 }
-.header_container {
+.red_line {
+  @include flex_end;
+  height: 48px;
+  background-color: rgb(214, 3, 7);
+}
+
+.contacts_wrapper {
+  @include flex-end;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts_text {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.header_wrapper {
   display: flex;
   max-width: 1400px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -81,23 +100,19 @@ nav {
 .nav_item {
   height: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   border-radius: 4px;
   padding-left: 5px;
   padding-right: 5px;
-  &:hover {
-    background-color: rgba(210, 207, 202, 0.2);
-
-    height: 100%;
-  }
 }
 
 .nav_link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.97);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  font-weight: 800;
-  font-family: sans-serif;
-  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+
 }
