@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <title>Kodak</title>
   </head>
   <body>
     <header>
       <div class="red_line">
         <div class="contacts_wrapper">
-          <a class="contacts_text" href="mailto:focus@email.com">focus@email.com</a>
-          <a class="contacts_text" href="tel:+1 (234) 567 89 00">+1 (234) 567 89 00</a>
+          <a class="contacts_text" href="mailto:focus@email.com"
+            >focus@email.com</a
+          >
+          <a class="contacts_text" href="tel:+1 (234) 567 89 00"
+            >+1 (234) 567 89 00</a
+          >
         </div>
       </div>
       <div class="header_wrapper">
@@ -36,7 +41,7 @@
             </li>
             <li class="nav_item"><a class="nav_link" href="#">Друк</a></li>
             <li class="nav_item">
-              <a class="nav_link" href="#">фототовари</a>
+              <a class="nav_link" href="#">Фототовари</a>
             </li>
             <li class="nav_item">
               <a class="nav_link" href="./src/pages/contacts.html">Контакти</a>
@@ -47,15 +52,46 @@
     </header>
     <div class="background">
       <section class="hero_section">
-        <p class="bigest_text">
-          Друк ваших фото буд'якого формату за найкращими цінами з доставкою по
-          Україні
-        </p>
+        <h3 class="hero_slogan_white">Магазин</h3>
+        <h3 class="hero_slogan_red">фототоварів</h3>
       </section>
     </div>
-    
+    <section class="services">
+      <h3 class="services_header">Товари та послуги</h3>
+      <p class="services_desc">
+        Ласкаво просимо до нашого фотомагазину! Ми пропонуємо широкий асортимент
+        товарів. У нас ви знайдете фоторамки, фотоальбоми та багато іншого. Наші
+        фахівці з радістю нададуть консультацію та допоможуть вам підібрати саме
+        те, що вам потрібно.
+      </p>
+      <ul class="services_list">
+        <li class="services_item">
+          <a class="services_link" href="#">
+            <img src="./src/img/docsPrint.jpg" width="265px" height="265px" alt="Photo" />
+            <h4 class="services_name">Фото на документи</h4>
+          </a>
+        </li>
+        <li class="services_item">
+          <a class="services_link" href="#">
+            <img src="./src/img/docsPrint.jpg" width="265px" height="265px" alt="Photo" />
+            <h4 class="services_name">Фото на документи</h4>
+          </a>
+        </li>
+        <li class="services_item">
+          <a class="services_link" href="#">
+            <img src="./src/img/docsPrint.jpg" width="265px" height="265px" alt="Photo" />
+            <h4 class="services_name">Фото на документи</h4>
+          </a>
+        </li>
+        <li class="services_item">
+          <a class="services_link" href="#">
+            <img src="./src/img/docsPrint.jpg" width="265px" height="265px" alt="Photo" />
+            <h4 class="services_name">Фото на документи</h4>
+          </a>
+        </li>
+      </ul>
+    </section>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="./dist/js/scripts.min.js"></script>
-    
   </body>
 </html>

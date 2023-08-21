@@ -4,10 +4,16 @@
     align-items: center;
 }
 
+@mixin flex_start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 @mixin flex_column {
     display: flex;
     flex-direction: column;
-
 }
 
 $red:rgb(214, 3, 7);
+$gray: #222323;
