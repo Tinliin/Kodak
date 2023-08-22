@@ -1,9 +1,6 @@
 .services {
-  @include flex_column;
-  max-width: 1400px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 110px 0 120px;
+  @include section_column;
+  
 }
 
 .services_desc {

@@ -1,8 +1,42 @@
+.features {
+    @include section_column;
+}
 
+.features_list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
+.features_item {
+    @include flex_column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border: 2px solid rgba(34, 35, 35, 0.3);
+    padding: 30px;
+    max-width: 270px;
+    height: 280px;
+    border-radius: 4px;
+}
 
 .feature_pic {
     width: 50px;
     height: 50px;
     opacity: 0.5;
+}
+
+.feature_header {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Bebas Neue", cursive;
+}
+
+.feature_desc {
+    color: rgb(113, 116, 116);
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
 }
