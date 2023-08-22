@@ -1,5 +1,38 @@
 .services {
-    @include flex_column;
-    max-width: 1400px;
-    margin: 0 auto;
+  @include flex_column;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 110px 0 120px;
+}
+
+.services_desc {
+  color: rgb(113, 116, 116);
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.services_item {
+  list-style: none;
+}
+
+.services_link {
+  text-decoration: none;
+}
+
+.services_name {
+  margin: 24px 0 0 0;
+  color: rgb(113, 116, 116);
+  font-size: 30px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
 }

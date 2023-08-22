@@ -2,3 +2,21 @@ body {
   box-sizing: border-box;
 }
 
+.section_header {
+  position: relative;
+  font-size: 44px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(34, 35, 35);
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 2px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    background-color: rgba(113, 116, 116, 0.3);
+  }
+}
