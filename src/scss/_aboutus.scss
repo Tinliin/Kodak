@@ -1,0 +1,19 @@
+.about_us {
+    display: flex;
+}
+
+.about_us_pic {
+    display: flex;
+    height: auto;
+    width: 50vw;
+}
+
+.about_us_content {
+    @include flex_column;
+    width: 50vw;
+    background-color: #222323;
+}
+
+.about_us_header {
+
+}
