@@ -684,3 +684,64 @@ body {
   font-family: "PT Sans", sans-serif;
   color: rgb(255, 255, 255);
 }
+
+footer {
+  background-color: rgb(34, 35, 35);
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding: 70px 0 45px;
+  margin: 0 auto;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 30vw;
+}
+
+.footer_gray_text {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "PT Sans", sans-serif;
+}
+
+.footer_nav {
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+  font-size: 27px;
+}
+
+.footer_nav_item {
+  list-style: none;
+}
+
+.footer_nav_link {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+.footer_nav_link:hover {
+  color: rgb(244, 1, 6);
+}
+.footer_nav_link::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  background-color: #fff;
+  width: 0;
+  height: 1px;
+  transition: width 0.5s;
+}
+.footer_nav_link:hover::after {
+  width: 100%;
+}
