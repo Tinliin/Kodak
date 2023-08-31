@@ -23,8 +23,6 @@ footer {
 }
 
 .footer_nav {
-//   display: flex;
-//   flex-direction: column;
   padding: 0;
   color: rgb(255, 255, 255);
   font-family: "PT Sans", sans-serif;
@@ -57,6 +55,21 @@ footer {
     transition: width 0.5s;
   }
   &:hover::after {
-    width: 100%;
+    width: 90%;
   }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.copyright_text {
+text-transform: uppercase;
+color: #fff;
+font-family: "Bebas Neue", cursive;
 }

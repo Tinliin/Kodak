@@ -649,6 +649,8 @@ body {
 }
 
 .about_us_header {
+  display: flex;
+  margin-right: auto;
   position: relative;
   font-size: 29px;
   font-family: "PT Sans", sans-serif;
@@ -658,7 +660,7 @@ body {
 .about_us_header::after {
   position: absolute;
   content: "";
-  width: 30%;
+  width: 70%;
   height: 2px;
   bottom: -15px;
   left: 0;
@@ -743,5 +745,20 @@ footer {
   transition: width 0.5s;
 }
 .footer_nav_link:hover::after {
-  width: 100%;
+  width: 90%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.copyright_text {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
 }
