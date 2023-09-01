@@ -23,3 +23,30 @@
 //     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
 //   });
+
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    console.log(rect, element);
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+function handleScroll() {
+    const elements = document.querySelectorAll('.unvisible');
+
+    elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add('visible');
+            element.classList.remove('unvisible');
+        }
+        else {
+            element.classList.add('unvisible');
+            element.classList.remove('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+

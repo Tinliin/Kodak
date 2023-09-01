@@ -470,7 +470,7 @@ body {
 
 .section_header {
   position: relative;
-  font-size: 44px;
+  font-size: 29px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: rgb(34, 35, 35);
@@ -485,6 +485,20 @@ body {
   transform: translateX(-50%);
   right: auto;
   background-color: rgba(113, 116, 116, 0.3);
+}
+
+.unvisible {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 1s;
+  transition: transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1s;
+  transition: transform 1s;
 }
 
 .background {
@@ -502,28 +516,20 @@ body {
 }
 
 .hero_slogan_white {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 49px;
   color: #fff;
   margin: 25vh 0 0 3vw;
-  animation: slideDown 1s ease-out forwards;
 }
 
 .hero_slogan_red {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Advent Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 49px;
   color: rgb(214, 3, 7);
   margin: 0 0 0 3vw;
 }
 
-@keyframes slideDown {
-  0% {
-    margin-top: 25vh;
-  }
-  100% {
-    margin-top: 35vh;
-  }
-}
 .services {
   display: flex;
   flex-direction: column;

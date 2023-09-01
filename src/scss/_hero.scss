@@ -12,25 +12,17 @@
 }
 
 .hero_slogan_white {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 49px;
   color: #fff;
   margin: 25vh 0 0 3vw;
-  animation: slideDown 1s ease-out forwards;
 }
 
 .hero_slogan_red {
-  font-family: "PT Sans", sans-serif;
-  font-size: 30px;
+  font-family: "Advent Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: 49px;
   color: $red;
   margin: 0 0 0 3vw;
 }
 
-@keyframes slideDown {
-    0% {
-      margin-top: 25vh;
-    }
-    100% {
-      margin-top: 35vh;
-    }
-  }

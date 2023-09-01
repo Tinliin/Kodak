@@ -4,7 +4,7 @@ body {
 
 .section_header {
   position: relative;
-  font-size: 44px;
+  font-size: 29px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: rgb(34, 35, 35);
@@ -19,4 +19,18 @@ body {
     right: auto;
     background-color: rgba(113, 116, 116, 0.3);
   }
+}
+
+.unvisible {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 1s;
+  transition: transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1s;
+  transition: transform 1s;
 }
