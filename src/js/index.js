@@ -26,7 +26,6 @@
 
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
-    console.log(rect, element);
     return (
         rect.top >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
@@ -41,8 +40,9 @@ function handleScroll() {
             element.classList.remove('unvisible');
         }
         else {
-            element.classList.add('unvisible');
             element.classList.remove('visible');
+            element.classList.add('unvisible');
+            console.log('cha');
         }
     });
 }
