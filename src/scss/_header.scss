@@ -129,3 +129,46 @@ nav {
     width: 100%;
   }
 }
+
+.burger_btn_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 31px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.burger_btn_line {
+  width: 29px;
+  height: 2px;
+  background-color: #fff;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 2px;
+    background-color: #fff;
+  }
+  &::before {
+    margin-top: 7px;
+  }
+
+  &::after {
+    margin-top: -16px;
+  }
+  @media (max-width: 800px) {
+    transform: rotate(45deg);
+    &::before {
+      transform: rotate(90deg);
+      margin-top: 0;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

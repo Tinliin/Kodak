@@ -445,6 +445,48 @@ nav {
   width: 100%;
 }
 
+.burger_btn_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 31px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.burger_btn_line {
+  width: 29px;
+  height: 2px;
+  background-color: #fff;
+}
+.burger_btn_line::before, .burger_btn_line::after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  background-color: #fff;
+}
+.burger_btn_line::before {
+  margin-top: 7px;
+}
+.burger_btn_line::after {
+  margin-top: -16px;
+}
+@media (max-width: 800px) {
+  .burger_btn_line {
+    transform: rotate(45deg);
+  }
+  .burger_btn_line::before {
+    transform: rotate(90deg);
+    margin-top: 0;
+  }
+  .burger_btn_line::after {
+    display: none;
+  }
+}
+
 .adress {
   font-family: Arial, Helvetica, sans-serif;
   margin: 25px 0 10px;
