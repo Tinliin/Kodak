@@ -27,6 +27,7 @@ header {
 }
 
 .header_wrapper {
+  position: relative;
   display: flex;
   max-width: 1400px;
   width: 100%;
@@ -86,6 +87,12 @@ header {
 nav {
   width: 50%;
   height: 70%;
+  @media (max-width: 800px) {
+    width: unset;
+    height: unset;
+    position: relative;
+    right: 0;
+  }
 }
 
 .nav_list {
@@ -93,25 +100,30 @@ nav {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
+    position: absolute;
     flex-direction: column;
+    top: 66px;
+    right: 0px;
+    background-color: #222323;
+    width: 40vw;
+    height: auto;
+    padding-bottom: 25px;
   }
 }
 
 .nav_item {
   height: 100%;
   display: flex;
-  position: relative;
   align-items: center;
-  border-radius: 4px;
   padding-left: 5px;
   padding-right: 5px;
-  @media (max-width: 800px){
-
-    margin-top: 10px;
+  @media (max-width: 800px) {
+    height: auto;
+    margin-top: 25px;
   }
 }
 
@@ -140,23 +152,24 @@ nav {
 
 .burger_btn_conteiner {
   display: none;
+  position: absolute;
+  right: 21px;
   @media (max-width: 800px) {
-      display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 31px;
-  border: 2px solid #fff;
-  border-radius: 3px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 31px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
   }
-
 }
 
 .burger_btn_line {
   width: 29px;
   height: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.65);
 
   &::before,
   &::after {
@@ -164,7 +177,7 @@ nav {
     display: block;
     width: 29px;
     height: 2px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.65);
   }
   &::before {
     margin-top: 7px;
@@ -174,13 +187,17 @@ nav {
     margin-top: -16px;
   }
   // @media (max-width: 800px) {
-  //   transform: rotate(45deg);
-  //   &::before {
-  //     transform: rotate(90deg);
-  //     margin-top: 0;
-  //   }
-  //   &::after {
-  //     display: none;
-  //   }
+
   // }
+}
+
+.burger_active {
+  transform: rotate(45deg);
+  &::before {
+    transform: rotate(90deg);
+    margin-top: 0;
+  }
+  &::after {
+    display: none;
+  }
 }
