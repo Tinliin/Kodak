@@ -797,6 +797,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   max-width: 30vw;
+  padding: 0 5px;
 }
 @media (max-width: 800px) {
   .footer_column {
@@ -859,4 +860,5 @@ footer {
   text-transform: uppercase;
   color: #fff;
   font-family: "Bebas Neue", cursive;
+  margin: 0 6px;
 }
