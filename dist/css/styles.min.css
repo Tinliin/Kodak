@@ -333,6 +333,12 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .contacts_wrapper {
+    margin: 0 5px;
+    flex-wrap: wrap;
+  }
+}
 
 .contacts_text {
   color: white;
@@ -619,12 +625,22 @@ body {
   align-items: center;
   padding: 110px 0 120px;
 }
+@media (max-width: 800px) {
+  .services {
+    padding: 0 6px;
+  }
+}
 
 .services_desc {
   color: rgb(113, 116, 116);
   font-size: 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+}
+@media (max-width: 800px) {
+  .services_desc {
+    text-align: center;
+  }
 }
 
 .services_list {
@@ -681,6 +697,12 @@ body {
   border-radius: 4px;
   margin-bottom: 15px;
 }
+@media (max-width: 800px) {
+  .features_item {
+    width: 70vw;
+    height: 70vw;
+  }
+}
 
 .feature_pic {
   width: 50px;
@@ -731,7 +753,9 @@ body {
 }
 @media (max-width: 800px) {
   .about_us_content {
+    box-sizing: border-box;
     width: 100vw;
+    padding: 0 3px;
   }
 }
 
