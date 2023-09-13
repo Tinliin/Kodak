@@ -11,7 +11,6 @@ function handleScroll() {
     const unvisibles = document.querySelectorAll('.unvisible');
     const visibles = document.querySelectorAll(".visible");
     const elements = [...visibles, ...unvisibles];
-console.log(elements);
     elements.forEach((element) => {
         if (isElementInViewport(element)) {
             element.classList.add('visible');
