@@ -17,6 +17,10 @@ header {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    margin: 0 5px;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts_text {
