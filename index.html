@@ -20,7 +20,7 @@
           <a class="contacts_text" href="mailto:focus@email.com"
             >focus@email.com</a
           >
-          <a class="contacts_text" href="tel:+1 (234) 567 89 00"
+          <a class="contacts_text" type="tel" href="tel:+1 (234) 567 89 00"
             >+1 (234) 567 89 00</a
           >
         </div>
@@ -49,6 +49,17 @@
             </li>
           </ul>
         </nav>
+        <div class="decor">
+          <a class="decor_link" href="#"
+            ><img height="20px" src="./src/img/Group 20.svg" alt=""
+          /></a>
+          <a class="decor_link" href="#"
+            ><img class="decor_img" src="./src/img/Group 21.svg" alt=""
+          /></a>
+          <a class="decor_link" href="#"
+            ><img class="decor_img" src="./src/img/Group 22.svg" alt=""
+          /></a>
+        </div>
         <div class="burger_btn_conteiner">
           <div class="burger_btn_line"></div>
         </div>
@@ -61,7 +72,7 @@
       </section>
     </div>
     <section class="services">
-      <h3 class="section_header">Товари та послуги</h3>
+      <h3 class="section_header unvisible">Товари та послуги</h3>
       <p class="services_desc unvisible">
         Ласкаво просимо до нашого фотомагазину! Ми пропонуємо широкий асортимент
         товарів. У нас ви знайдете фоторамки, фотоальбоми та багато іншого. Наші
@@ -332,8 +343,7 @@
       />
       <div class="about_us_content">
         <h3 class="about_us_header">
-          Про нас<span style="color: rgb(255, 0, 0)">.</span>
-        </h3>
+          Про нас
         <h4 class="about_us_subheader">
           Магазин фототоварів в м. Новий Розділ, Львівської області.
         </h4>
@@ -347,7 +357,18 @@
         </p>
       </div>
     </section>
-    <section class="map" id="map" style="height: 70vh"></section>
+    <section class="map">
+      <div id="map" style="height: 100%;"></div>
+      <div class="map_contacts">
+        <h4 class="contacts_header">Контакти</h4>
+        <address class="address_desc">м Новий Розділ</address>
+        <address class="address_desc">Львівська область</address>
+        <a class="address_desc" style="margin: 15px 0;" href="tel:+1 (234) 567 89 00"
+        >+1 (234) 567 89 00</a
+      >
+        <a class="address_desc" href="mailto:focus@email.com">focus@email.com</a>
+      </div>
+    </section>
     <footer>
       <div class="footer_content">
         <div class="footer_column">

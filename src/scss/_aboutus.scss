@@ -1,5 +1,6 @@
 .about_us {
   display: flex;
+  height: 100vh;
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -7,7 +8,6 @@
 
 .about_us_pic {
   display: flex;
-  height: auto;
   width: 50vw;
   @media (max-width: 800px) {
     width: 100vw;
@@ -34,6 +34,10 @@
   font-weight: 700;
   color: rgb(255, 255, 255);
   &::after {
+    content: ".";
+    color: rgb(255, 0, 0);
+  }
+  &::before {
     position: absolute;
     content: "";
     width: 70%;

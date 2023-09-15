@@ -703,6 +703,7 @@ body {
 
 .about_us {
   display: flex;
+  height: 100vh;
 }
 @media (max-width: 800px) {
   .about_us {
@@ -712,7 +713,6 @@ body {
 
 .about_us_pic {
   display: flex;
-  height: auto;
   width: 50vw;
 }
 @media (max-width: 800px) {
@@ -745,6 +745,10 @@ body {
   color: rgb(255, 255, 255);
 }
 .about_us_header::after {
+  content: ".";
+  color: rgb(255, 0, 0);
+}
+.about_us_header::before {
   position: absolute;
   content: "";
   width: 70%;
@@ -755,7 +759,7 @@ body {
   background-color: rgb(255, 0, 0);
 }
 @media (max-width: 800px) {
-  .about_us_header::after {
+  .about_us_header::before {
     width: 70px;
   }
 }
@@ -861,4 +865,60 @@ footer {
   color: #fff;
   font-family: "Bebas Neue", cursive;
   margin: 0 6px;
+}
+
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.decor_img {
+  width: 30px;
+  height: 30px;
+}
+.decor_img:hover {
+  background-color: black;
+}
+
+.map {
+  position: relative;
+  height: 95vh;
+}
+
+.map_contacts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  right: 15%;
+  top: 25%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.01);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.contacts_header {
+  text-align: center;
+  font-size: 29px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(34, 35, 35);
+  margin: 0 0 10px;
+}
+.contacts_header::after {
+  content: ".";
+  font-size: 29px;
+  color: rgb(244, 1, 6);
+}
+
+.address_desc {
+  all: unset;
+  color: rgb(113, 116, 116);
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 4px;
 }
