@@ -3,8 +3,8 @@
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        rect.top >= -300 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)-200
     );
 }
 function handleScroll() {
