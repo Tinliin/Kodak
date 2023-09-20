@@ -216,6 +216,9 @@ nav {
   justify-content: space-around;
   width: 145px;
   height: 45px;
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .decor_link {

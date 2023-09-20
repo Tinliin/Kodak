@@ -4,8 +4,9 @@ footer {
 
 .footer_content {
   display: flex;
-  justify-content: space-between;
-  max-width: 1400px;
+  justify-content:flex-start;
+  align-items:flex-start;
+  max-width: 1200px;
   padding: 70px 0 45px;
   margin: 0 auto;
   @media (max-width: 800px) {
@@ -17,9 +18,10 @@ footer {
 .footer_column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 30vw;
   padding: 0 5px;
+  margin-left: 80px;
   @media (max-width: 800px) {
     max-width: 60vw;
   }
@@ -28,6 +30,8 @@ footer {
 .footer_gray_text {
   color: rgba(255, 255, 255, 0.65);
   font-family: "PT Sans", sans-serif;
+  max-width: 21vw;
+  margin: 0;
 }
 
 .footer_nav {

@@ -6,7 +6,7 @@
 .map_contacts {
   position: absolute;
   @include flex_column;
-  padding: 60px;
+  padding: 60px 80px;
   right: 15%;
   top: 25%;
 
