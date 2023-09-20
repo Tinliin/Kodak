@@ -4,7 +4,7 @@ function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
         rect.top >= -300 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)-200
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)+200
     );
 }
 function handleScroll() {

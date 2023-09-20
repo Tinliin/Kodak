@@ -55,8 +55,8 @@ header {
     content: "";
     position: relative;
     top: 6px;
-    border: 1px solid #000000;
-    background-color: #000000;
+    border: 1px solid #fff;
+    background-color: #fff;
     width: 2px;
     height: 45px;
     margin: 0 5px;
@@ -207,5 +207,46 @@ nav {
   }
   &::after {
     display: none;
+  }
+}
+
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 145px;
+  height: 45px;
+}
+
+.decor_link {
+  display: flex;
+  background-size: cover;
+  background-color: unset;
+}
+
+.focus {
+  background-image: url(../img/Group7.png);
+  width: 24px;
+  height: 24px;
+  &:hover {
+    background-image: url(../img/Group3.png);
+  }
+}
+
+.photo {
+  background-image: url(../img/Group6.png);
+  width: 35px;
+  height: 25px;
+  &:hover {
+    background-image: url(../img/Group4.svg);
+  }
+}
+
+.scape {
+  background-image: url(../img/Group8.svg);
+  width: 37px;
+  height: 25px;
+  &:hover {
+    background-image: url(../img/Group9.svg);
   }
 }

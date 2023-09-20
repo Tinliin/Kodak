@@ -83,17 +83,3 @@ footer {
   margin: 0 6px;
 }
 
-.decor {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 110px;
-}
-
-.decor_img {
-  width: 30px;
-  height: 30px;
-  &:hover {
-    background-color: black;
-  }
-}

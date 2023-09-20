@@ -372,8 +372,8 @@ header {
   content: "";
   position: relative;
   top: 6px;
-  border: 1px solid #000000;
-  background-color: #000000;
+  border: 1px solid #fff;
+  background-color: #fff;
   width: 2px;
   height: 45px;
   margin: 0 5px;
@@ -532,6 +532,47 @@ nav {
   display: none;
 }
 
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 145px;
+  height: 45px;
+}
+
+.decor_link {
+  display: flex;
+  background-size: cover;
+  background-color: unset;
+}
+
+.focus {
+  background-image: url(../img/Group7.png);
+  width: 24px;
+  height: 24px;
+}
+.focus:hover {
+  background-image: url(../img/Group3.png);
+}
+
+.photo {
+  background-image: url(../img/Group6.png);
+  width: 35px;
+  height: 25px;
+}
+.photo:hover {
+  background-image: url(../img/Group4.svg);
+}
+
+.scape {
+  background-image: url(../img/Group8.svg);
+  width: 37px;
+  height: 25px;
+}
+.scape:hover {
+  background-image: url(../img/Group9.svg);
+}
+
 .adress {
   font-family: Arial, Helvetica, sans-serif;
   margin: 25px 0 10px;
@@ -589,7 +630,7 @@ body {
 }
 
 .background {
-  background-image: url("../img/dmitry-berdnyk-KazuJrQhVEg-unsplash.jpg");
+  background-image: url("../img/camera.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -889,21 +930,6 @@ footer {
   color: #fff;
   font-family: "Bebas Neue", cursive;
   margin: 0 6px;
-}
-
-.decor {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 110px;
-}
-
-.decor_img {
-  width: 30px;
-  height: 30px;
-}
-.decor_img:hover {
-  background-color: black;
 }
 
 .map {
