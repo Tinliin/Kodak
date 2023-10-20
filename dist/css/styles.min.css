@@ -634,22 +634,6 @@ body {
   transition: transform 1s;
 }
 
-.parallax_wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-.parallax_background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transform: translateZ(-20px) scale(4);
-}
-
 .background {
   background-image: url("../img/camera.jpg");
   background-size: auto;
@@ -668,13 +652,7 @@ body {
   font-family: "Advent Pro", sans-serif;
   font-size: 49px;
   color: #fff;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
+  margin: 25vh 0 0 3vw;
 }
 
 .hero_slogan_red {
