@@ -17,8 +17,8 @@ header {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  @media (max-width: 800px) {
-    margin: 0 5px;
+  @media (max-width: 1400px) {
+    margin: 0 40px;
     flex-wrap: wrap;
   }
 }
@@ -51,6 +51,7 @@ header {
 
 .logo_img {
   display: flex;
+  margin-left: 40px;
   &::after {
     content: "";
     position: relative;
@@ -212,6 +213,7 @@ nav {
 
 .decor {
   display: flex;
+  margin-right: 40px;
   align-items: center;
   justify-content: space-around;
   width: 145px;

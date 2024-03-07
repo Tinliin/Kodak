@@ -333,9 +333,9 @@ header {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
   .contacts_wrapper {
-    margin: 0 5px;
+    margin: 0 40px;
     flex-wrap: wrap;
   }
 }
@@ -367,6 +367,7 @@ header {
 
 .logo_img {
   display: flex;
+  margin-left: 40px;
 }
 .logo_img::after {
   content: "";
@@ -534,6 +535,7 @@ nav {
 
 .decor {
   display: flex;
+  margin-right: 40px;
   align-items: center;
   justify-content: space-around;
   width: 145px;
