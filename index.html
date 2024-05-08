@@ -65,11 +65,6 @@
         <h3 class="hero_slogan_red unvisible">фототоварів</h3>
       </section>
     </div>
-    <!-- <div class="parallax_wrapper">
-      <img class="parallax_background" src="./src/img/camera.jpg" alt="background" />
-      <h3 class="hero_slogan_white unvisible">Магазин</h3>
-      <h3 class="hero_slogan_red unvisible">фототоварів</h3>
-    </div> -->
     <section class="services">
       <h3 class="section_header">Товари та послуги</h3>
       <p class="services_desc unvisible">
@@ -335,11 +330,7 @@
       </ul>
     </section>
     <section class="about_us">
-      <img
-        class="about_us_pic"
-        src="./src/img/xcj.png"
-        alt="US"
-      />
+      <img class="about_us_pic" src="./src/img/xcj.png" alt="US" />
       <div class="about_us_content">
         <h3 class="about_us_header">Про нас</h3>
         <h4 class="about_us_subheader">
@@ -355,8 +346,19 @@
         </p>
       </div>
     </section>
-    <section class="map">
-      <div id="map" style="height: 100%"></div>
+    <section class="map_wrapper">
+      <div class="map" style="height: 100%">
+        <iframe
+        class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.5922075968174!2d24.133458181107336!3d49.47331946001919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a8a16576a6737%3A0x1217f49bd22f4124!2z0KTQntCa0KPQoQ!5e0!3m2!1sru!2sua!4v1715153283374!5m2!1sru!2sua"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
       <div class="map_contacts">
         <h4 class="contacts_header">Контакти</h4>
         <address class="address_desc">м Новий Розділ</address>
@@ -374,8 +376,8 @@
     </section>
     <footer>
       <div class="footer_content">
-        <div class="footer_column" style="margin-left: 0;">
-          <a href="./index.html" class="logo" style="margin: 29px 0 30px;">
+        <div class="footer_column" style="margin-left: 0">
+          <a href="./index.html" class="logo" style="margin: 29px 0 30px">
             <div class="logo_img">
               <img src="./src/img/logo.png" height="60px" alt="Logo" />
             </div>
@@ -391,7 +393,7 @@
         </div>
         <div class="footer_column">
           <ul class="footer_nav">
-            <h3 class="about_us_header" style="margin-top: 0;">Про нас</h3>
+            <h3 class="about_us_header" style="margin-top: 0">Про нас</h3>
             <li class="footer_nav_item">
               <a class="footer_nav_link" href="#">Про нас</a>
             </li>
@@ -403,16 +405,17 @@
             </li>
           </ul>
         </div>
-        <div class="footer_column" style="margin-left: auto;">
-        <h3 class="about_us_header">Наші роботи</h3>
-        <div class="decor">
-          <a class="decor_link focus" href="#"></a>
-          <a class="decor_link photo" href="#"></a>
-          <a class="decor_link scape" href="#"></a>
+        <div class="footer_column" style="margin-left: auto">
+          <h3 class="about_us_header">Наші роботи</h3>
+          <div class="decor">
+            <a class="decor_link focus" href="#"></a>
+            <a class="decor_link photo" href="#"></a>
+            <a class="decor_link scape" href="#"></a>
+          </div>
         </div>
+        
       </div>
-      </div>
-      
+
       <div class="copyright">
         <p class="copyright_text">©Created by ZayatcFamily</p>
         <p class="copyright_text">All rights Reserved</p>
