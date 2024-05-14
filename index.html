@@ -59,22 +59,21 @@
         </div>
       </div>
     </header>
-    <div class="background">
       <section class="hero_section">
-        <h3 class="hero_slogan_white unvisible">Магазин</h3>
-        <h3 class="hero_slogan_red unvisible">фототоварів</h3>
+        <img class="hero_section_background rellax" data-rellax-speed="5" src="./src/img/camera.jpg" alt="">
+        <h3 class="hero_slogan_white invisible">Магазин</h3>
+        <h3 class="hero_slogan_red invisible">фототоварів</h3>
       </section>
-    </div>
     <section class="services">
       <h3 class="section_header">Товари та послуги</h3>
-      <p class="services_desc unvisible">
+      <p class="services_desc invisible">
         Ласкаво просимо до нашого фотомагазину! Ми пропонуємо широкий асортимент
         товарів. У нас ви знайдете фоторамки, фотоальбоми та багато іншого. Наші
         фахівці з радістю нададуть консультацію та допоможуть вам підібрати саме
         те, що вам потрібно.
       </p>
       <ul class="services_list">
-        <li class="services_item unvisible">
+        <li class="services_item invisible">
           <a class="services_link" href="#">
             <img
               src="./src/img/docsPrint.jpg"
@@ -85,7 +84,7 @@
             <h4 class="services_name">Фото на документи</h4>
           </a>
         </li>
-        <li class="services_item unvisible">
+        <li class="services_item invisible">
           <a class="services_link" href="#">
             <img
               src="./src/img/docsPrint.jpg"
@@ -96,7 +95,7 @@
             <h4 class="services_name">Фото на документи</h4>
           </a>
         </li>
-        <li class="services_item unvisible">
+        <li class="services_item invisible">
           <a class="services_link" href="#">
             <img
               src="./src/img/docsPrint.jpg"
@@ -107,7 +106,7 @@
             <h4 class="services_name">Фото на документи</h4>
           </a>
         </li>
-        <li class="services_item unvisible">
+        <li class="services_item invisible">
           <a class="services_link" href="#">
             <img
               src="./src/img/docsPrint.jpg"
@@ -121,9 +120,9 @@
       </ul>
     </section>
     <section class="features">
-      <h3 class="section_header unvisible">Чому вибрати нас</h3>
+      <h3 class="section_header invisible">Чому вибрати нас</h3>
       <ul class="features_list">
-        <li class="features_item unvisible">
+        <li class="features_item invisible">
           <svg
             class="feature_pic"
             xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +254,7 @@
             Get advantage of our free worldwide shipping on all orders over $90.
           </p>
         </li>
-        <li class="features_item unvisible">
+        <li class="features_item invisible">
           <svg
             class="feature_pic"
             xmlns="http://www.w3.org/2000/svg"
@@ -303,7 +302,7 @@
             days.
           </p>
         </li>
-        <li class="features_item unvisible">
+        <li class="features_item invisible">
           <svg
             class="feature_pic"
             xmlns="http://www.w3.org/2000/svg"
@@ -422,5 +421,9 @@
       </div>
     </footer>
     <script src="./dist/js/scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+  var rellax = new Rellax('.rellax');
+</script>
   </body>
 </html>

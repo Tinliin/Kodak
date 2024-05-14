@@ -109,7 +109,7 @@ nav {
   align-items: center;
   height: 100%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     position: absolute;
     flex-direction: column;
     top: 66px;
@@ -132,7 +132,7 @@ nav {
   align-items: center;
   padding-left: 5px;
   padding-right: 5px;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     height: auto;
     margin-top: 25px;
   }
@@ -165,7 +165,7 @@ nav {
   display: none;
   position: absolute;
   right: 21px;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +218,7 @@ nav {
   justify-content: space-around;
   width: 145px;
   height: 45px;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: none;
   }
 }

@@ -8,18 +8,18 @@ function isElementInViewport(element) {
     );
 }
 function handleScroll() {
-    const unvisibles = document.querySelectorAll('.unvisible');
-    const visibles = document.querySelectorAll(".visible");
-    const elements = [...visibles, ...unvisibles];
-    elements.forEach((element) => {
+    const invisibles = document.querySelectorAll('.invisible');
+    // const visibles = document.querySelectorAll(".visible");
+    // const elements = [...visibles, ...invisibles];
+    invisibles.forEach((element) => {
         if (isElementInViewport(element)) {
             element.classList.add('visible');
-            element.classList.remove('unvisible');
+            element.classList.remove('invisible');
         }
-        else {
-            element.classList.remove('visible');
-            element.classList.add('unvisible');
-        }
+        // else {
+        //     element.classList.remove('visible');
+        //     element.classList.add('invisible');
+        // }
     });
 }
 

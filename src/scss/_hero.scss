@@ -1,16 +1,21 @@
 
-.background {
-  background-image: url("../img/camera.jpg");
-  background-size:auto;
-  background-position: center;
-  height: 80vh;
-
-}
 
 .hero_section {
   @include flex_column;
-  max-width: 1400px;
-  margin: 0 auto;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0 auto; 
+  position: relative;
+  
+}
+
+.hero_section_background {
+  width: 100vw; 
+  height: auto;
+  position: absolute;
+  top: -90vh;
+  left: -3px;
+  
 }
 
 .hero_slogan_white {
