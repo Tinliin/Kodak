@@ -10,6 +10,7 @@ header {
   @include flex_end;
   height: 48px;
   background-color: $red;
+  // filter: brightness(0.7);
 }
 
 .contacts_wrapper {

@@ -652,6 +652,13 @@ body {
   top: -90vh;
   left: -5px;
 }
+@media (max-width: 768px) {
+  .hero_section_background {
+    top: -10vh;
+    left: -1;
+    width: 102vw;
+  }
+}
 
 .hero_slogan_white {
   font-family: "Advent Pro", sans-serif;

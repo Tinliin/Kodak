@@ -1,0 +1,4 @@
+1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-Tinliin.fokus-kodak.com.ua
+2. Use this code for the value of the TXT record: cc7b958f5c02422526a02edd38babd
+3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
+  
